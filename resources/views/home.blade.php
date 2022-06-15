@@ -8,11 +8,11 @@
         <div class="row">
             @foreach($trips as $trip)
                 <div class="col">
-                    <div class="imgae">
+                    <div class="image">
                         <img src="{{$trip['image']}}" alt="">
                     </div>
                     <div class="text">
-                        <div>{{$trip['destinazione']}}</div>
+                        <strong>{{$trip['Destinazione']}}</strong>
                         <div>{{$trip['prezzo']}}</div>
                         <div>{{$trip['giorni']}}</div>
                         <div>{{$trip['data_partenza']}}</div>

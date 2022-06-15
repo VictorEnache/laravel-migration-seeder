@@ -4,3 +4,36 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: aquamarine;
+  height: 50px;
+  margin-top: 2rem;
+}
+
+header {
+  background-color: aquamarine;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
