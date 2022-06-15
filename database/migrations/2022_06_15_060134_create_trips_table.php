@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateViaggiTable extends Migration
+class CreateTripsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateViaggiTable extends Migration
      */
     public function up()
     {
-        Schema::create('viaggi', function (Blueprint $table) {
+        Schema::create('trips', function (Blueprint $table) {
             $table->id();
 
             $table->string('Destinazione', 50);
@@ -24,7 +24,7 @@ class CreateViaggiTable extends Migration
             $table->text('attivita');
             $table->string('image');
 
-
+            $table->timestamps();
         });
     }
 
@@ -35,6 +35,6 @@ class CreateViaggiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('viaggi');
+        Schema::dropIfExists('trips');
     }
 }
