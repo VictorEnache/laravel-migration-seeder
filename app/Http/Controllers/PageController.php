@@ -10,7 +10,7 @@ class PageController extends Controller
     public function index(){
 
         $trips = Trip::all();
-        dd($trips);
-        return view('home');
+        //dd($trips);
+        return view('home', compact('trips'));
     }
 }
